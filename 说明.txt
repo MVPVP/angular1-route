@@ -1,3 +1,3 @@
-1�����ڰ��Ʒ����1.01���棻
-2������̬ҳ���õ�angularjs1.0��·��angular-route.js��
-3�����л�����webstorm�༭��ֱ�Ӵ��ļ�������������ֱ�Ӵ�index.html��
+1、友邻邦产品官网1.01本版；
+2、纯静态页面用到angularjs1.0及路由angular-route.js；
+3、运行环境：webstorm编辑器直接打开文件，便可在浏览器直接打开index.html访问正常页面（直接双击打开index.html文件，路由内容部分显示不正常）；
