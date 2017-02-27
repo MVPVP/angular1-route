@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html  ng-app="ngRouteExample">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>友邻邦</title>
+    <meta name="keywords" content="友邻邦，赛翼，互联网门禁，智能门禁，智慧社区">
+    <meta name="description" content="友邻邦APP是一款基于移动互联网、物联网技术开发的智慧社区手机客户端。小区业主可通过APP随时随地实现远程门禁开锁，可视对讲，视频监视、访客授权等功能，同时还具有物业信息接收、咨询投诉、报事报修等物业服务功能。专为小区住户量身定做，乐享智慧生活！" >
+    <link type="text/css" rel="stylesheet" href="src/style/common.css">
+    <link type="text/css" rel="stylesheet" href="src/style/main.css">
+    <link type="text/css" rel="stylesheet" href="src/style/contact.css">
+    <link type="text/css" rel="stylesheet" href="src/style/slideCarousel.css">
+</head>
+
+<body class="ng-scope">
+<div class="bodyBox">
+    <nav class="header" role="navigation">
+        <div class="logo-img">
+            <h1 style="display: none;">友邻邦智能门禁开锁</h1>
+            <img class="logo" src="src/imgs/logo1.png">
+        </div>
+        <div class="headertext">
+            <ul>
+                <li class="text active"><a  href="#/home">首页</a></li>
+                <li class="text">
+                    <a href="#/product">产品
+                        <div class="tabwrap" style="display: none;">
+                            <ul class="tabs">
+                                <li class="cur" >
+                                    <p class="text">智能门禁</p>
+                                </li>
+                                <li >
+                                    <p class="text">智能物管</p>
+                                </li>
+                                <li>
+                                    <p class="text">云平台</p>
+                                </li>
+                                <li>
+                                    <p class="text">门口机</p>
+                                </li>
+                                <li>
+                                    <p class="text">管理口机</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="tagIcon"></i>
+                    </a>
+                </li>
+                <!--<li class="text"><a href="#/mycase">案例</a></li>-->
+                <li class="text">
+                    <a href="#/resolve">解决方案
+                        <div class="tabwrap" style="display: none;">
+                            <ul class="tabs resolveTags">
+                                <li class="cur" >
+                                    <p class="text">新区建设方案</p>
+                                </li>
+                                <li >
+                                    <p class="text">旧区改造方案</p>
+                                </li>
+                                <li>
+                                    <p class="text">社区安全方案</p>
+                                </li>
+                                <li>
+                                    <p class="text">访客管理方案</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="tagIcon"></i>
+                    </a>
+                </li>
+                <li class="text"><a href="#/contact">关注我们</a></li>
+                <li class="text">
+                    <a href="javascript:void 0;">App下载
+                        <div class="tabwrap downloadwrap" style="display: none;">
+                            <div class="download ylb">
+                                <img src="src/imgs/ylb-code.png" alt="" width="100%">
+                                <p>友邻邦扫二维码下载</p>
+                            </div>
+                            <div class="download wuye">
+                                <img src="src/imgs/wuye-code.png" alt="" width="100%">
+                                <p>物业宝扫二维码下载</p>
+                            </div>
+                        </div>
+                        <i class="tagIcon"></i>
+                    </a>
+                </li>
+                <!--<li class="text"><a href="#/join">加入我们</a></li>-->
+            </ul>
+        </div>
+    </nav>
+
+    <div ng-view="" class="containView">
+    </div>
+    <foot>
+        <div class="footmsg">
+            <!--<div class="footwrap">-->
+                <!--<div class="footbox">-->
+                    <!--<i class="fa fa-weibo fa-4x"></i>-->
+                    <!--<p>关注新浪微博</p>-->
+                    <!--<p>了解实时动态</p>-->
+                <!--</div>-->
+                <!--<div class="footbox">-->
+                    <!--<i class="fa fa-weixin fa-4x"></i>-->
+                    <!--<p>关注官方微信</p>-->
+                    <!--<p>百万金币相送</p>-->
+                <!--</div>-->
+                <!--<div class="footbox">-->
+                    <!--<i class="fa fa-phone fa-4x"></i>-->
+                    <!--<p>联系客服</p>-->
+                    <!--<p>BUG实时反馈</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="copyright">
+                <p>COPYRIGHT©广东赛翼智能科技股份有限公司&nbsp;电话:020-38959987&nbsp;传真:020-38050026</p>
+                <p>地址:广州市天河区棠福路(科韵路中)3号A栋顺盈商业大厦703</p>
+                <p><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备16058589号</a></p>
+            </div>
+        </div>
+    </foot>
+</div>
+<!--<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>-->
+<!--<script src="http://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>-->
+<script src="src/scripts/angular.min.js"></script>
+<script src="src/scripts/angular-route.js"></script>
+<script src="src/scripts/jquery-3.1.1.min.js"></script>
+<script src="src/scripts/ks.slideCarousel.js"></script>
+<script src="src/scripts/routes.js"></script>
+<script src="src/scripts/main.js"></script>
+<script src="src/scripts/home.js"></script>
+<script src="src/scripts/product.js"></script>
+<script src="src/scripts/resolve.js"></script>
+<!--<script src="src/scripts/mycase.js"></script>-->
+<script src="src/scripts/contact.js"></script>
+<!--<script src="src/scripts/join.js"></script>-->
+<script>
+    var curLocation=window.location.href.split('#/')[1];
+    switch (curLocation){
+        case 'product':
+            $($('.headertext>ul>li.text')[1]).addClass('active').siblings().removeClass('active');
+            break;
+        case 'resolve':
+            $($('.headertext>ul>li.text')[2]).addClass('active').siblings().removeClass('active');
+            break;
+        case 'contact':
+            $($('.headertext>ul>li.text')[3]).addClass('active').siblings().removeClass('active');
+            break;
+        case 'join':
+            $($('.headertext>ul>li.text')[4]).addClass('active').siblings().removeClass('active');
+            break;
+    }
+    $('.headertext .text').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    $('.headertext li.text').hover(function(){
+//        if($(this).children().find('.tabwrap').is(":animated")){
+//            return;
+//        }
+        $(this).children().find('.tabwrap').slideToggle('fast');
+        $(this).children().find('.tagIcon').slideToggle('fast');
+    });
+</script>
+</body>
+</html>

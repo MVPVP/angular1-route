@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+.intro {
+    width:1280px;
+    height:940px;
+    background-color:#000;
+    margin:0 auto;
+    position:relative;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+.intro p {
+    position:absolute;
+    left:0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 10px;
+    color:#A2E9F9;
+    font-size:18px;
+    /*text-shadow: 1px 1px 3px #7e92fb;*/
+    animation:showp 2s 1s;
+    -webkit-animation:showp 2s 1s;
+    opacity: 0;
+    -webkit-animation-fill-mode:forwards;
+}
+.intro p.one{
+    top: 600px;
+    text-shadow: 0px 0px 10px;
+}
+.intro p.two {
+    font-size: 15px;
+    color: #9C9C9C;
+    top: 750px;
+    animation: 1.5s showp 4s 2s;
+    -webkit-animation: showp 4s 2s;
+    opacity: 0;
+    -webkit-animation-fill-mode:forwards;
+}
+.intro .iconLink{
+    font-style: normal;
+    color: #ff0000;
+    display: inline-block;
+    margin: 0 5px;
+}
+#logopic1 {
+    top: 350px;
+    left: 650px;
+    z-index:1;
+    animation:first 1.5s;
+    -webkit-animation:first 1.5s;
+}
+#logopic2 {
+    top: 400px;
+    left: 609px;
+    z-index:2;
+    animation:second 2s;
+    -webkit-animation:second 2s;
+}
+#logopic3 {
+    top: 400px;
+    left: 605px;
+    z-index:3;
+    animation:three 1.75s;
+    -webkit-animation:three 1.75s;
+}
+#logopic4 {
+    top: 353px;
+    left: 581px;
+    z-index:4;
+    animation:four 1.5s;
+    -webkit-animation:four 1.5s;
+}
+#logopic5 {
+    top: 470px;
+    left: 584px;
+    z-index:5;
+    animation:five 2.25s;
+    -webkit-animation:five 2.25s;
+}
+#logopic6 {
+    top: 510px;
+    left: 556px;
+    z-index:6;
+    animation:six 2.5s;
+    -webkit-animation:six 2.5s;
+}
+#logopic7 {
+    top: 350px;
+    left: 618px;
+    z-index:7;
+    animation:seven 1.5s;
+    -webkit-animation:seven 1.5s;
+}
+#logopic8 {
+    top: 398px;
+    left: 578px;
+    z-index:8;
+    animation:eight 2s;
+    -webkit-animation:eight 2s;
+}
+#logopic9 {
+    top: 352px;
+    left: 549px;
+    z-index:9;
+    animation:nine 1.5s;
+    -webkit-animation:nine 1.5s;
+}
+#logopic10 {
+    top: 400px;
+    left: 575px;
+    z-index:7;
+    animation:ten 1.75s;
+    -webkit-animation:ten 1.75s;
+}
+#logopic11 {
+    top: 468px;
+    left: 555px;
+    z-index:11;
+    animation:eleven 2.25s;
+    -webkit-animation:eleven 2.25s;
+}
+@keyframes first {
+    0% {left:1280px;}
+    25% {left:625px;}
+    50% {left:655px;}
+    75% {left:642px;}
+    100%{left:650px;}
+}
+@keyframes second {
+    0% {left:1280px;}
+    25% {left:574px;}
+    50% {left:619px;}
+    75% {left:601px;}
+    100%{left:609px;}
+}
+@keyframes three {
+    0% {left:1280px;}
+    25% {left:590px;}
+    50% {left:615px;}
+    75% {left:597px;}
+    100%{left:605px;}
+}
+@keyframes four {
+    0% {left:1280px;}
+    25% {left:570px;}
+    50% {left:591px;}
+    75% {left:573px;}
+    100%{left:581px;}
+}
+@keyframes five {
+    0% {left:1280px;}
+    25% {left:575px;}
+    50% {left:590px;}
+    75% {left:580px;}
+    100%{left:584px;}
+}
+@keyframes six {
+    0% {left:1280px;}
+    25% {left:541px;}
+    50% {left:566px;}
+    75% {left:548px;}
+    100%{left:556px;}
+}
+@keyframes seven {
+    0% {left:0px;}
+    25% {left:630px;}
+    50% {left:605px;}
+    75% {left:620px;}
+    100%{left:618px;}
+}
+@keyframes eight {
+    0% {left:0px;}
+    25% {left:583px;}
+    50% {left:573px;}
+    75% {left:580px;}
+    100%{left:578px;}
+}
+@keyframes nine {
+    0% {left:0px;}
+    25% {left:575px;}
+    50% {left:550px;}
+    75% {left:560px;}
+    100%{left:549px;}
+}
+@keyframes ten {
+    0% {left:0px;}
+    25% {left:595px;}
+    50% {left:570px;}
+    75% {left:583px;}
+    100%{left:575px;}
+}
+@keyframes eleven {
+    0% {left:0px;}
+    25% {left:560px;}
+    50% {left:550px;}
+    75% {left:557px;}
+    100%{left:555px;}
+}
+@keyframes showp {
+    0% {opacity:0;}
+    25% {opacity:0.3}
+    50% {opacity:0.7}
+    100% {opacity:1}
+}
+/*.animationtest{position: absolute;left: 0;top: 50px;height: 120px;width: 20px;background: #ff0000;animation: mytest 4s ease;top: 352px;
+    left: 549px;}
+@keyframes mytest{
+	0% {left:0px;}
+	25% {left:534px;}
+	50% {left:559px;}
+	75% {left:541px;}
+	100%{left:549px;}
+}*/

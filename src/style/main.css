@@ -1,0 +1,642 @@
+html{
+    font-size: 14px;
+}
+.clearfix:after{
+    display: block;
+    content: '.';
+    clear: both;
+    height:0;
+    overflow: hidden;
+}
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+.headertext li.text a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+/*产品*/
+.tabwrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    /*padding-top: 55px;*/
+}
+.tabwrap{
+    position: fixed;
+    left:0;
+    right:0;
+    top:55px;
+    z-index: 0;
+}
+.tabs li .text{
+    top:36px;
+}
+
+.tabs {
+    width: 50%;
+    overflow: hidden;
+    height: 100px;
+    padding: 0 15%;
+    margin: 0 auto;
+    position: relative;
+    max-width:400px;
+}
+.tabs li {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    height: 100px;
+}
+.tabs li .icon {
+    animation: moveIcon 1s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 28px 0 15px;
+    opacity: .5;
+}
+.tabs li .icon i{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: #333;
+}
+.tabs li.cur .icon {
+    opacity: 1;
+}
+.tabs li .text {
+    animation: moveText 1s ease;
+    position: absolute;
+    /*top: 65px;*/
+    left: 0;
+    right: 0;
+    line-height: 1.5rem;
+    font-size: .75rem;
+    color: #999;
+}
+.tabs li.cur .text {
+    color: #000;
+}
+
+.imgwrap {
+    background-color: #fff;
+    overflow: hidden;
+}
+.imgwrap .Box1{
+    height: 600px;
+    position: relative;
+    margin-top:55px;
+}
+.productImg,.imgText{
+    position: absolute;
+}
+.item1 .productImg{
+    left: 50%;
+    margin-left: -360px;
+}
+.item2 .productImg{
+    left: 50%;
+    margin-left: -100px;
+}
+
+.item3 .productImg{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.item4 .productImg{
+    left: 50%;
+    margin-left: -340px;
+}
+.imgText{
+    line-height: 2.5rem;
+}
+.item1 .imgText,.item4 .imgText{
+    left: 50%;
+    top: 35%;
+    margin-left: 50px;
+}
+.item2 .imgText{
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+}
+.item2 .imgText p{
+    letter-spacing: 1rem;
+    text-indent: -1.3rem;
+}
+.item3 .imgText{
+    left: 0;
+    right: 0;
+    top: 20%;
+    text-align: center;
+}
+.item3 .imgText p{
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+}
+
+.imgText h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.imgText p{
+    font-family: songsum;
+}
+.imgText p.font{
+    font-size: 1.2rem;
+}
+.imgText p.fontA{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+/*////resolve 解决方案*/
+.resolvePage .imgwrap .Box1{
+    height:auto;
+    max-width: 825px;
+    margin: 120px auto 0;
+    width: 90%;
+}
+.resolvePage .imgwrap .Box1 .Img{
+    width: 100%;
+}
+.resolvePage .tabs li{
+    width:25%;
+}
+.resolveTags.tabs li:nth-child(1){
+    left:0%;
+}
+.resolveTags.tabs li:nth-child(2){
+    left:25%;
+}
+.resolveTags.tabs li:nth-child(3){
+    left:50%;
+}
+.resolveTags.tabs li:nth-child(4){
+    left:75%;
+}
+/*app下载*/
+.downloadwrap .download{
+    width: 180px;
+    display: inline-block;
+    margin:25px;
+}
+.downloadwrap .download p{
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    color: #333;
+}
+/*//动画*/
+.tabs {
+    width: 50%;
+}
+.tabs li{
+    position: absolute;
+}
+.tabs li:nth-child(1){
+    left: 0;
+}
+.tabs li:nth-child(2){
+    left: 20%;
+}
+.tabs li:nth-child(3){
+    left: 40%;
+}
+.tabs li:nth-child(4){
+    left: 60%;
+}
+.tabs li:nth-child(5){
+    left: 80%;
+}
+.tabs li .icon{
+    animation: moveIcon 1s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.tabs li .text{
+    animation: moveText 1s ease ;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+@keyframes moveIcon{
+    0%{
+        left: 20px;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes moveText{
+    0%{
+        left: 20px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.introduce {
+    background-color: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.introducewrap {
+    width: 95%;
+    max-width: 1000px;
+    font-size: 15px;
+    margin: 0 auto;
+    padding-top: 165px;
+    padding-bottom: 165px;
+}
+.introducewrap p{
+    line-height:30px;
+    margin-bottom:10px;
+}
+.introducewrap p span.left{
+    width: 130px;
+    display: inline-block;
+}
+.productPage .imgP104{
+    max-width:250px;
+    /*background: #999;*/
+    float: left;
+    margin-left:15%;
+    width: 30%;
+}
+.productPage .download{
+    float: left;
+    max-width: 200px;
+    width: 25%;
+    margin-left: 15%;
+}
+.download .btn{
+    height: 2.8rem;
+    line-height: 2.8rem;
+    background-color: #26a69a;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.download.wuye .btn{
+    background: #639CDB;
+}
+.productPage .download.ios .btn{
+    background: #9ccc65;
+}
+.productPage .download .btn i{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: .6rem;
+    position: absolute;
+    left: 11px;
+}
+
+.productPage .download.adr .btn i{
+    background: url("../imgs/i/android .png");
+    background-size:22px 22px;
+}
+.productPage .download.ios .btn i{
+    background: url("../imgs/i/iOS.png");
+    background-size:22px 22px;
+}
+.productPage .download img{
+    max-width: 200px;
+    margin-top: 1.3rem;
+}
+.productPage .download p{
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.introduce h3{
+    line-height: 40px;
+}
+.introduce h3 span{
+    vertical-align: top;
+}
+.introduce h3 i{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: #26c6da;
+    margin: 7px 15px 0 -40px
+}
+    /*产品-end*/
+/*主页 homePage*/
+.flexslider .slides > li{
+    position: relative;
+}
+.imgText{
+    position: absolute;
+}
+.imgText.one{
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.tagsMain .imgText.one{
+    top: 20%;
+}
+.imgText.two{
+    top: 53%;
+    left: 50%;
+    margin-left: -425px;
+}
+.imgText.two p{
+    letter-spacing: 1.6rem;
+    text-indent: -1.3rem;
+}
+.imgText.three{
+    top: 35%;
+    left: 55%;
+}
+.imgText.three h2{
+    margin-bottom: 15px;
+}
+.imgText.three p{
+    margin-top: 15px;
+    font-weight: 100;
+}
+.imgText.three p.font{
+    font-size: 1.2rem;
+    margin-top: 0;
+    font-family: songsum;
+}
+.f-media{}
+.f-media ul{
+    width: 98%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.f-media ul li{
+    width: 31.33%;
+    margin: 0 1%;
+    float: left;
+    box-shadow: 4px 4px 10px #ccc;
+    cursor: pointer;
+}
+.f-media ul li img{
+    width: 100%;
+}
+.f-media li.ylb{
+    /*background: url("../imgs/youlianbang.png");*/
+}
+.f-media li.vedio{
+
+}
+.f-media li.wuye{
+    /*background: url("../imgs/youlianbang.png");*/
+}
+/*主页*/
+/*mycasePage -begin*/
+.mycasePage{
+    background: #fff;
+}
+.mycasePage .ks-slideCarousel{
+    background: #fff;
+}
+.mycasePage .ks-slideCarousel .slide-nav{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top:55px;
+    height: 55px;
+    text-align: center;
+}
+.mycasePage .ks-slideCarousel .slide-nav ul li,.mycasePage .ks-slideCarousel .slide-nav ul li.active,.mycasePage .ks-slideCarousel .slide-nav ul{
+    width: auto;
+    height: auto;
+    padding:0;
+}
+.mycasePage .ks-slideCarousel .slide-nav ul li,.mycasePage .ks-slideCarousel .slide-nav ul li.active{
+    display: inline-block;
+    width: 100px;
+    float: none;
+    background: url(../imgs/tagBg1.png) no-repeat bottom;
+    height: 36px;
+    background-size: 100px 15px;
+    border: none;
+    margin: 10px 10px 0 10px;
+    font-size:12px;
+    font-family: songsum;
+}
+.mycasePage .ks-slideCarousel .slide-nav ul li.active{
+    padding: 0;
+    width: 150px;
+    background-size: 150px 30px;
+    height: 46px;
+    font-size: 15px;
+    font-weight: bold;
+   -webkit-transition:all 1s  ;
+   -ms-transition:all 1s  ;
+}
+.mycasePage .ks-slideCarousel .slide-nav ul li.active:hover{
+
+}
+.mycasePage .ks-slideCarousel .slide-main ul li{
+
+}
+.description {
+    max-width: 1000px;
+    width:95%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.description h2{
+    line-height: 80px;
+}
+.description p{
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #777;
+}
+.description p.ct{
+    text-align: center;
+}
+.ks-slideCarousel .slide-main{
+    margin-top:55px;
+}
+/*mycasePage-end*/
+
+/*contactPage-begin*/
+.contactPage .description{
+    padding: 110px 0;
+}
+.contactPage .textBox{
+    margin-top: 50px;
+    max-width: 500px;
+    width: 50%;
+    float: left;
+    margin-right:10%;
+}
+.contactPage .textBox .heading{
+    width:100px;
+    border-bottom:1px solid #D1D1D1;
+}
+.contactPage .imgBox{
+    width: 40%;
+    float: left;
+    margin-top: 165px;
+}
+.contactPage .imgBox img {
+    width: 100%;
+    max-width: 440px;
+}
+
+/*contactPage-end*/
+
+/*joinPage-begin*/
+.joinPage{
+    margin-top: 30px;
+}
+.joinPage{
+    color: rgb(33, 92, 172);
+}
+.joinPage .description p{
+    line-height: 25px;
+    font-size: 13px;
+}
+/*joinPage-end*/
+
+
+
+
+/*响应式*/
+@media screen and (max-width: 1000px){
+    html{
+        font-size:10px;
+    }
+    .productImg{
+        width: 500px;
+        margin: 50px;
+    }
+    .item1 .productImg {
+        margin-left: -330px;
+    }
+    .item4 .productImg {
+        margin-left: -300px;
+    }
+    .item1 .imgText, .item4 .imgText {
+        margin-left: 35px;
+    }
+    .item2 .imgText {
+        margin-left: -210px;
+    }
+    .slide2 .imgText.two {
+        margin-left: -300px;
+    }
+    .imgText h2{
+        margin-bottom:.5rem;
+    }
+    .headertext{
+        margin-left: -165px;
+    }
+    .logo-img {
+        top: 16px;
+        margin-left: -200px;
+    }
+    .headertext .text{
+        font-size:1.4rem;
+        padding:0 1.4rem;
+    }
+    .homePage .imgText.one{
+        top:20%;
+    }
+}
+@media screen and (max-width: 600px){
+    html{
+        font-size:8px;
+    }
+    .slide2 .imgText.two {
+        margin-left: -170px;
+    }
+
+    .homePage  .imgText p{
+        line-height:1.2rem;
+    }
+    .homePage .imgText h2 {
+        margin-bottom: 0;
+    }
+    .homePage .imgText.two p{
+        letter-spacing: .5rem;
+    }
+    .item3 .imgText{
+        top:20%;
+    }
+    .productImg{
+        width: 400px;
+        margin: 100px;
+    }
+    .item1 .productImg{
+        margin-left:-250px;
+    }
+    .item2 .imgText {
+        margin-left: -175px;
+    }
+    .item3 .productImg {
+        margin-top: 100px;
+    }
+    .item4 .productImg {
+        margin-left: -240px;
+    }
+    .headertext .text{
+        padding:0 .8rem;
+        font-size: 1.4rem;
+    }
+    .headertext {
+        margin-left: -115px;
+    }
+    .logo-img {
+        margin-left: -155px;
+    }
+    .productPage .imgP104{
+        min-width: 250px;
+        margin: 0 auto;
+        float: none;
+    }
+    .productPage .download{
+        width: 40%;
+        margin: 10% 30%;
+    }
+    .productPage .download.adr{
+        width: 30%;
+        margin: 15%;
+    }
+    .productPage .download.ios{
+        width: 30%;
+        margin: 15% 0;
+    }
+    .mycasePage .ks-slideCarousel .slide-nav ul li, .mycasePage .ks-slideCarousel .slide-nav ul li.active{
+        width: 75px;
+        background-size: 75px 12px;
+    }
+    .mycasePage .ks-slideCarousel .slide-nav ul li.active{
+        width: 100px;
+        background-size: 100px 15px;
+        height: 40px;
+    }
+    .contactPage .textBox,.contactPage .imgBox{
+        width: 80%;
+        float: none;
+        margin-top: 30px;
+    }
+
+    /*/////*/
+}

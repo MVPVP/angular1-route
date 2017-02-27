@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+}
+img {
+	border:none;
+}
+body {
+	font-size:12px;
+	font-family:"微软雅黑";
+	background-color:#f1ecec;
+	color:#000;
+	position:relative;
+}
+.showPage,.showPage .intro{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height:auto;
+	min-height:780px;
+}
+
+li {
+	list-style:none;
+}
+.none {
+	display:none;
+}
+.mleft70 {
+	margin-left:70px !important;
+}
+.widget {
+	position:absolute;
+	cursor:default;
+}
+.workspace {
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	position:fixed;
+}
+.header {
+	width:100%;
+	margin:0 auto;
+	background-color:#474747;
+	height:55px;
+	opacity:1;
+	position:fixed;
+	z-index:999;
+}
+.header i {
+	color:#fff;
+	position:absolute;
+	top:3px;
+	left:0;
+}
+.logo-img {
+	position:absolute;
+	width:2rem;
+	overflow:hidden;
+	left:50%;
+	border-style: solid;
+	border-width:0;
+	top:12px;
+	margin-left:-330px;
+}
+.logo-img img {
+	width:100%;
+	height:auto;
+	display:block;
+}
+.headertext {
+	height:100%;
+	position:absolute;
+	top:0;
+	overflow:hidden;
+	left:50%;
+	margin-left:-275px;
+}
+.headertext>ul>li.text {
+	height:55px;
+	line-height:55px;
+	text-align:center;
+	float:left;
+	color:#fff;
+	font-size:1.1rem;
+	padding:0 2.4rem;
+	cursor:pointer;
+	transition: all .5s;
+	position: relative;
+}
+.headertext .text:hover>a{
+	color: #D3FAF5;
+}
+.headertext .text.active a{
+	color:#7dffe5;
+}
+.header i.tagIcon{
+	border-width: 8px;
+	border-color: transparent transparent #F8F8F8 transparent;
+	border-style: dashed dashed solid dashed;
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	width: 0;
+	top: 40px;
+	 display: none;
+	left: 50%;
+	margin-left: -8px;
+}
+.searcharea {
+	height:30px;
+	position:absolute;
+	left:75%;
+	border-radius:3px;
+	text-align:left;
+	color: #888888;
+	border-width:0;
+	border-style: solid;
+	line-height: 100%;
+	top:23px;
+}
+.searcharea input {
+	width:140px;
+	height:100%;
+	font-size:14px;
+	padding:0.8px;
+	background-color:#555555;
+	border-color:#555555;
+	position:absolute;
+	top:0;
+	left:27px;
+	margin-left:5px;
+}
+.main {
+	width:100%;
+	margin:0 auto;
+	min-height:500px;
+}
+.footmsg {
+	width:100%;
+	margin:0 auto;
+	border-bottom:solid 4px #CCCCCC;
+	border-top:solid 4px #CCCCCC;
+	background-color:#fff;
+}
+.footwrap {
+	width:67%;
+	margin:50px auto;
+	overflow:hidden;
+}
+.footbox {
+	width:33%;
+	float:left;
+	text-align:left;
+	position:relative;
+}
+.footbox i {
+	width: 2.8rem;
+	background: #333;
+	height: 2.8rem;
+	float: left;
+	margin-top:.2rem;
+}
+.footbox p {
+	font-size:1.2rem;
+	margin-left:4rem;
+}
+.copyright {
+	width:100%;
+	background-color:#666;
+	padding:20px 0;
+}
+.copyright p {
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+	line-height:25px;
+}
+/*////////////////////////////////////////wei*/
+.bodyBox{
+    overflow: hidden;
+}
+.ks-slideCarousel .slide-main .prev, .ks-slideCarousel .slide-main .next{
+	background: url("../imgs/aLR.png");
+	width:40px;
+	height: 48px;
+}
+.ks-slideCarousel .slide-main .prev:hover{
+	background-position: -66px 0;
+	opacity: .2;
+}
+.ks-slideCarousel .slide-main .next{
+	background-position: -120px 0;
+}
+.ks-slideCarousel .slide-main .next:hover{
+	background-position: -187px 0;
+	opacity: .2;
+}
+/*///icon*/
+.footbox i{
+
+}
+.footbox .fa-weibo{
+	background: url("../imgs/i/f1.png");
+	background-size: 2.8rem 2.8rem;
+}
+.footbox .fa-weixin{
+	background: url("../imgs/i/f2.png");
+	background-size: 2.8rem 2.8rem;
+}
+.footbox .fa-phone{
+	background: url("../imgs/i/f3.png");
+	background-size: 2.8rem 2.8rem;
+}
+.tabs li .icon i.fa-fax{
+	background: url("../imgs/i/pi1.png");
+	-webkit-background-size:30px 30px;
+	background-size:30px 30px;
+}
+.tabs li .icon i.fa-users{
+	background: url("../imgs/i/pi2.png");
+	background-size:30px 30px;
+}
+.tabs li .icon i.fa-cloud{
+	background: url("../imgs/i/pi3.png");
+	background-size:30px 30px;
+}
+.tabs li .icon i.fa-camera-retro{
+	background: url("../imgs/i/pi4.png");
+	background-size:30px 30px;
+}
+.tabs li .icon i.fa-laptop{
+	background: url("../imgs/i/pi5.png");
+	background-size:30px 30px;
+}

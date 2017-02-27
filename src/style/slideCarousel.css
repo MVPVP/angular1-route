@@ -1,0 +1,117 @@
+.ks-slideCarousel{
+    background-color:#F7F6E1;
+    width:100%;
+    position:relative;
+    overflow: hidden;
+}
+.ks-slideCarousel .slide-main{
+    height:0px;
+    width:100%;
+    padding-bottom: 56.25%;
+    overflow:hidden;
+    position:relative;
+
+}
+.ks-slideCarousel .slide-main ul{
+    height: 400px;
+}
+.ks-slideCarousel .slide-main ul li{
+    float: left;
+    display: inline;
+    width:100%;
+    background: #fff;
+    position: relative;
+}
+.ks-slideCarousel .slide-main ul li img{
+    width:100%;
+}
+
+.ks-slideCarousel .slide-main .prev,
+.ks-slideCarousel .slide-main .next{
+    position: absolute;
+    top: 50%;
+    /*height: 50px;*/
+    /*width: 30px;*/
+    /*background: #000;*/
+    opacity: .5;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.ks-slideCarousel .slide-main .prev_disabled,
+.ks-slideCarousel .slide-main .next_disabled{
+    opacity: .1;
+}
+
+.ks-slideCarousel .slide-main .prev{
+    left: 0;
+}
+
+.ks-slideCarousel .slide-main .next{
+    right: 0;
+}
+
+.ks-slideCarousel .slide-nav{
+    width:100%;
+    overflow:hidden;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    z-index:3;
+    background: #fff;
+}
+.ks-slideCarousel .slide-nav ul{
+    width: 100px;
+    height: 80px;
+    margin: auto;
+}
+.ks-slideCarousel .slide-nav ul li{
+    padding:1px;
+    float: left;
+    display: inline;
+    width: 4px;
+    height: 4px;
+    border:2px solid #666;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+}
+.ks-slideCarousel .slide-nav ul li.active{
+    border:1px solid #666;
+    padding:0;
+    width: 8px;
+    height:8px;
+    background: #666;
+}
+.ks-slideCarousel .slide-nav ul li img{
+    height:78px;
+    width:78px;
+}
+
+.ks-slideCarousel .title,
+.ks-slideCarousel .mask{
+    position:absolute;
+    bottom:50px;
+    left:0;
+    z-index:2;
+    height:30px;
+    line-height:30px;
+    width:100%;
+    text-indent:1em;
+}
+
+.ks-slideCarousel .title a{
+    color:#fff;
+}
+.ks-slideCarousel .mask{
+    z-index:1;
+    background-color:#000;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+
+.ks-slideCarousel .active .title,
+.ks-slideCarousel .active .mask{
+    bottom: 80px;
+}
